@@ -143,21 +143,6 @@ nav a {
     position: relative;
 }
 
-nav a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: var(--blue);
-    left: 0;
-    bottom: -5px;
-    transition: width .3s ease;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -276,6 +261,12 @@ form {
 
 section {
     padding: 5rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 /* MEDIA QUERIES (MEDIUM) */ 
