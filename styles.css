@@ -76,6 +76,7 @@ table {
 #offerings .container {
     display: grid;
     gap: 2rem;
+    grid-template-columns: 1fr;
 }
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
@@ -207,6 +208,9 @@ header h1::before {
     .bar-chart {
         width: 50%;
     }
+    #offerings .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* MEDIA QUERIES (LARGE) */
@@ -216,8 +220,7 @@ header h1::before {
         justify-content: flex-end;
         gap: 2rem;
     }
-}
-
-#offerings .container {
-    grid-template-columns: repeat(3, 1fr);
+    #offerings .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
