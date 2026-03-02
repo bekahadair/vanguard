@@ -107,6 +107,11 @@ table {
 header {
     background: black;
     padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    background: rgba (0, 0, 0, .85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
@@ -123,6 +128,34 @@ header h1::before {
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
     animation: float 3s ease-in-out infinite;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--blue);
+    left: 0;
+    bottom: -5px;
+    transition: width .3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 /* THIS ONE IS DONE FOR YOU */
@@ -166,6 +199,17 @@ header h1::before {
         height: var(--height);
     }
 }
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
 .bar {
     animation: stepUp 1s ease-in-out forwards;
@@ -191,6 +235,14 @@ header h1::before {
     padding: 2rem;
     border-radius: 10px;
     transition: transform .3s ease, box-shadow .3s ease;
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeUp .8s ease forwards;
+}
+
+#offerings article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba (0, 0, 0, .4);
 }
 
 #results {
