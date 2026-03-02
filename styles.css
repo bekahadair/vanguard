@@ -193,6 +193,30 @@ header h1::before {
     transition: transform .3s ease, box-shadow .3s ease;
 }
 
+#results {
+    background: var(--blue);
+    color: var(--white);
+    padding: 3rem 0;
+}
+
+.results-grid {
+    display: grid;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid;
+}
+
 /* MEDIA QUERIES (MEDIUM) */ 
 @media (min-width: 800px) {
     #results {
@@ -210,6 +234,10 @@ header h1::before {
     }
     #offerings .container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .results-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
     }
 }
 
