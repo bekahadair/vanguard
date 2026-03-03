@@ -104,6 +104,11 @@ p {
     grid-template-columns: 1fr;
 }
 
+form {
+    display: grid;
+    gap: 1.5rem;
+}
+
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
  #hero {
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
@@ -122,7 +127,6 @@ p {
 
 #hero p {
     margin: 1.5rem auto;
-    max-width: 500px;
     opacity: 0;
     animation: fadeUp 1s ease .3s forwards;
     color: white;
@@ -382,13 +386,10 @@ tbody tr:nth-child(even) {
     background: var(--charcoal);
 }
 
-form {
-    display: grid;
-    gap: 1.5rem;
-}
-
 section {
     padding: 5rem 0;
+    width: 90%;
+    margin: 100px auto;
 }
 
 #about {
