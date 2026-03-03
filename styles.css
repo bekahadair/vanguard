@@ -121,7 +121,7 @@ p {
 }
 
 #hero p {
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
     max-width: 500px;
     opacity: 0;
     animation: fadeUp 1s ease .3s forwards;
@@ -140,6 +140,9 @@ header {
     background: black;
     backdrop-filter: blur(10px);
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
@@ -160,7 +163,6 @@ header h1 {
 }
 
 nav {
-    background-color: var(--blue);
     position: relative;
 }
 
@@ -341,6 +343,15 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     opacity: 0;
     transform: translateY(25px);
     animation: fadeUp .8s ease forwards;
+    transition: transform .3s ease;
+}
+
+#services article:hover {
+    transform: translateY(-10px);
+}
+
+#services h3 {
+    font-weight: 700;
 }
 
 #results {
@@ -400,11 +411,6 @@ footer {
     #results {
         grid-template-columns: 1fr 1fr;
     }
-    #results .container {
-        flex-direction: row;
-        justify-content: space-between;
-        width: 50%;
-    }
     .bar-chart {
         width: 50%;
     }
@@ -419,18 +425,19 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
     textarea {
-        grid-column: span 1;
+        grid-column: span 2;
     }
     button {
-        grid-column: span 1;
+        grid-column: span 2;
         align-self: end;
     }
     nav ul {
         overflow: visible;
-        position: absolute;
-        top: 1.5rem;
+        position: static;
         right: .5rem;
-        display: grid;
+        display: flex;
+        justify-content: flex end;
+        gap: 2rem;
         grid-template-columns: 1fr 1fr 1fr;
     }
     nav li a {
