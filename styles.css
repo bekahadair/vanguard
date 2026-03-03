@@ -389,7 +389,6 @@ tbody tr:nth-child(even) {
 section {
     padding: 5rem 0;
     width: 100%;
-    margin: 100px auto;
 }
 
 #about {
@@ -409,9 +408,6 @@ footer {
 
 /* MEDIA QUERIES (MEDIUM) */ 
 @media (min-width: 800px) {
-    #results {
-        grid-template-columns: 1fr 1fr;
-    }
     .bar-chart {
         width: 50%;
     }
@@ -437,7 +433,7 @@ footer {
         position: static;
         right: .5rem;
         display: flex;
-        justify-content: flex end;
+        justify-content: flex-end;
         gap: 2rem;
         grid-template-columns: 1fr 1fr 1fr;
     }
