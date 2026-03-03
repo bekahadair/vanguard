@@ -140,7 +140,6 @@ form {
 }
 
 header {
-    padding: 1rem 2rem;
     width: 100%;
     background: black;
     backdrop-filter: blur(10px);
@@ -148,6 +147,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
@@ -366,7 +372,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 .results-grid {
     display: grid;
-    gap: 3rem;
+    gap: 2rem;
     margin-top: 2rem;
 }
 
@@ -450,6 +456,7 @@ footer {
         gap: 2rem;
     }
     .services-grid {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 }
