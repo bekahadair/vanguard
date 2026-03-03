@@ -126,7 +126,6 @@ p {
     opacity: 0;
     animation: fadeUp 1s ease .3s forwards;
     color: white;
-    text-align: center;
 }
 
 #hero .container {
