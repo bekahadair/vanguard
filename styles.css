@@ -73,10 +73,6 @@ table {
     margin: 0 auto;
 }
 
-#offerings h2 {
-    grid-column: 1 / -1;
-}
-
 #offerings .container {
     display: grid;
     gap: 2rem;
@@ -95,9 +91,6 @@ table {
 }
 
 #hero h2 {
-    font-size: 2rem;
-    font-weight: 500;
-    letter-spacing: 2px;
     animation: fadeUp 1s ease forwards;
     color: white;
 }
@@ -108,19 +101,17 @@ table {
     opacity: 0;
     animation: fadeUp 1s ease .3s forwards;
     color: white;
+    text-align: center;
 }
 
 #hero .container {
-    background: black;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     padding: 3rem;
     border-radius: 10px;
 }
 
 header {
-    background: black;
     padding: 1rem 2rem;
-    position: fixed;
     width: 100%;
     background: black;
     backdrop-filter: blur(10px);
@@ -128,11 +119,6 @@ header {
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
-header h1 {
-    position: relative;
-    padding-left: 5rem;
-}
-
 header h1::before {
     content: "";
     position: absolute;
@@ -141,10 +127,16 @@ header h1::before {
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
     animation: float 3s ease-in-out infinite;
+    display: block;
+}
+
+header h1 {
+    position: relative;
+    padding-left: 5rem;
 }
 
 nav {
-    background-color: black;
+    background-color: var(--blue);
     position: relative;
 }
 
@@ -165,8 +157,6 @@ nav h2 {
 
 nav li a {
     display: block;
-    font-family: sans-serif;
-    font-size: 1.5rem;
     padding: 1rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -332,7 +322,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 #offerings article:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px var(--charcoal);
 }
 
 #results {
@@ -372,10 +361,8 @@ section {
     padding: 5rem 0;
 }
 
-h2, p, h3 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
+#expertise {
+    text-align: left;
 }
 
 #contact {
@@ -391,18 +378,6 @@ footer {
 
 body {
     font-family: var(--Inter, sans-serif);
-}
-
-form input, form textarea {
-    padding: 1rem;
-    border: 2px solid var(--blue);
-    background: black;
-    color: white;
-    width: 100%;
-}
-
-form textarea {
-    min-height: 150px;
 }
 
 /* MEDIA QUERIES (MEDIUM) */ 
