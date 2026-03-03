@@ -338,14 +338,9 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     color: white;
     padding: 2rem;
     border-radius: 10px;
-    transition: transform .3s ease, box-shadow .3s ease;
     opacity: 0;
     transform: translateY(25px);
     animation: fadeUp .8s ease forwards;
-}
-
-#services article:hover {
-    transform: translateY(-10px);
 }
 
 #results {
