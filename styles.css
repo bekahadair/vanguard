@@ -203,6 +203,7 @@ nav ul {
     list-style: none;
     text-align: center;
     max-height: 0;
+    overflow: hidden;
 }
 
 nav h2 {
