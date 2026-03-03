@@ -136,7 +136,6 @@ form {
     place-items: center;
     text-align: center;
     padding: 1rem;
-    overflow: hidden;
 }
 
 #hero h2 {
@@ -204,7 +203,6 @@ nav ul {
     margin: 0;
     padding-right: 2rem;
     list-style: none;
-    overflow: hidden;
     text-align: center;
     max-height: 0;
 }
