@@ -93,7 +93,7 @@ p {
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -173,7 +173,7 @@ nav {
 nav ul {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding-right: 2rem;
     list-style: none;
     overflow: hidden;
     text-align: center;
@@ -237,7 +237,7 @@ label span:after {
     top:-.75rem;
 }
 
-input {
+nav input {
     display: none;
 }
 
@@ -386,11 +386,6 @@ tbody tr:nth-child(even) {
     background: var(--charcoal);
 }
 
-section {
-    padding: 5rem 0;
-    width: 100%;
-}
-
 #about {
     text-align: left;
 }
@@ -430,17 +425,19 @@ footer {
     }
     nav ul {
         overflow: visible;
+        max-height: none;
         position: static;
         right: .5rem;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         gap: 2rem;
         grid-template-columns: 1fr 1fr 1fr;
     }
     nav li a {
         display: inline-block;
     }
-    label span, input {
+    label span, nav input {
         display: none;
     }
 }
