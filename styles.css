@@ -110,8 +110,6 @@ p {
     color: white;
     padding: 2rem;
     border-radius: 5px;
-    opacity: 0;
-    animation: fadeUp .8s ease forwards;
     transition: transform .3s ease;
 }
 
@@ -412,9 +410,6 @@ footer {
 
 /* MEDIA QUERIES (MEDIUM) */ 
 @media (min-width: 800px) {
-    .bar-chart {
-        width: 50%;
-    }
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
