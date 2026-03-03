@@ -401,6 +401,9 @@ footer {
     text-align: center;
 }
 
+section {
+    padding: 5rem;
+}
 /* MEDIA QUERIES (MEDIUM) */ 
 @media (min-width: 800px) {
     .bar-chart {
