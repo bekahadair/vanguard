@@ -156,7 +156,7 @@ form {
 
 header {
     width: 100%;
-    background: black;
+    background: var(--black);
     backdrop-filter: blur(10px);
     z-index: 1000;
     display: flex;
@@ -221,7 +221,7 @@ nav li a {
     transition: background-color .3s ease-in
 }
 
-nav a:hover, nav input:hover {
+nav a:hover {
     background-color: blue;
     color: white;
 }
@@ -308,6 +308,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     position: relative;
     transition: height 1s ease-in-out;
     height: 0;
+    animation: stepUp 1s ease-in-out forwards;
 }
 /* THIS ONE IS DONE FOR YOU */
 .bar::after {
@@ -346,9 +347,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     100% { transform: translateY(0px); }
 }
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
-.bar {
-    animation: stepUp 1s ease-in-out forwards;
-}
 
 .button {
     display: inline-block;
@@ -380,7 +378,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 table {
     width: 100%;
-    background: black;
+    background: var(--black);
     color: white;
 }
 
@@ -399,12 +397,12 @@ tbody tr:nth-child(even) {
 }
 
 #contact {
-    background-color: black;
+    background-color: var(--black);
     color: white;
 }
 
 footer {
-    background-color: black;
+    background-color: var(--black);
     color: white;
     text-align: center;
 }
@@ -437,7 +435,6 @@ footer {
         justify-content: flex-end;
         align-items: center;
         gap: 2rem;
-        grid-template-columns: 1fr 1fr 1fr;
     }
     nav li a {
         display: inline-block;
@@ -449,11 +446,6 @@ footer {
 
 /* MEDIA QUERIES (LARGE) */
 @media (min-width: 1024px) {
-    nav ul {
-        display: flex;
-        justify-content: flex-end;
-        gap: 2rem;
-    }
     .services-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
