@@ -93,7 +93,7 @@ p {
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -345,7 +345,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     padding: 2rem;
     border-radius: 10px;
     opacity: 0;
-    transform: translateY(25px);
     animation: fadeUp .8s ease forwards;
     transition: transform .3s ease;
 }
@@ -401,9 +400,6 @@ footer {
     text-align: center;
 }
 
-section {
-    padding: 5rem;
-}
 /* MEDIA QUERIES (MEDIUM) */ 
 @media (min-width: 800px) {
     .bar-chart {
