@@ -98,9 +98,10 @@ p {
     margin: 0 auto;
 }
 
-#services .container {
+.services-grid {
     display: grid;
     gap: 2rem;
+    margin-top: 2rem;
     grid-template-columns: 1fr;
 }
 
@@ -339,7 +340,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     transform: translateY(-3px);
 }
 
-#services article {
+.services-grid article {
     background: var(--blue);
     color: white;
     padding: 2rem;
@@ -349,7 +350,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     transition: transform .3s ease;
 }
 
-#services article:hover {
+.services-grid article:hover {
     transform: translateY(-10px);
 }
 
@@ -405,7 +406,7 @@ footer {
     .bar-chart {
         width: 50%;
     }
-    #services .container {
+    .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     .results-grid {
@@ -448,7 +449,7 @@ footer {
         justify-content: flex-end;
         gap: 2rem;
     }
-    #services .container {
+    .services-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
